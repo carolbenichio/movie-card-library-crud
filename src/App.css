@@ -1,5 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
 body {
-  background-color: whitesmoke;
+  background-color: white;
   box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
 }
 
+.title {
+  font-family: 'Staatliches';
+  letter-spacing: 2px;
+  font-size: 40px;
+  padding: 25px 30px;
+  margin: 0;
+  background-color: #0b090a;
+  color: #ba181b;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+h5 {
+  margin: 0;
+}
+
+.movies {
+  display: flex;
+  flex-flow: wrap row;
+  background-color: #161a1d;
+  padding: 30px;
+  justify-content: space-evenly
+}
+
+.movie-card {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  margin: 15px;
+  overflow: hidden;
+  width: 300px;
+}
+
+.movie-card:hover {
+  transform: scale(1.02);
+}
+
+.loading {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.add-bar {
+  background-color: #660708;
+  display: flex;
+  padding: 5px;
+  justify-content: space-evenly;
+  font-family: 'Nunito', sans-serif;
+}
+
+.add-card .add-card-movies {
+  color: white;
+}
+
+.add-card:hover {
+  font-weight: 600;
+}
+
+.add-card-movies:hover {
+  font-weight: 600;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
