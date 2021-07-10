@@ -23,7 +23,7 @@ class MovieForm extends React.Component {
     return (
       <div>
         <label htmlFor="movie_title">
-          Título:
+          Title:
           <input
             placeholder="Insira o título"
             id="movie_title"
@@ -43,7 +43,7 @@ class MovieForm extends React.Component {
     return (
       <div>
         <label htmlFor="movie_subtitle">
-          Subtítulo:
+          Subtitle:
           <input
             placeholder="Insira o subtítulo"
             id="movie_subtitle"
@@ -62,7 +62,7 @@ class MovieForm extends React.Component {
     return (
       <div className="row">
         <label htmlFor="movie_image">
-          Imagem:
+          Image:
           <input
             placeholder="Insira o caminho da imagem"
             id="movie_image"
@@ -81,7 +81,7 @@ class MovieForm extends React.Component {
     return (
       <div>
         <label htmlFor="movie_storyline">
-          Sinopse:
+          Storyline:
           <textarea
             id="movie_storyline"
             value={ storyline }
@@ -97,7 +97,7 @@ class MovieForm extends React.Component {
     return (
       <div>
         <label htmlFor="movie_genre">
-          Gênero:
+          Genre:
           <select
             id="movie_genre"
             value={ genre }
@@ -118,7 +118,7 @@ class MovieForm extends React.Component {
     return (
       <div>
         <label htmlFor="movie_rating">
-          Avaliação:
+          Rating:
           <input
             id="movie_rating"
             type="number"
@@ -141,7 +141,7 @@ class MovieForm extends React.Component {
           type="button"
           onClick={ this.handleSubmit }
         >
-          Submit
+          Submit!
         </button>
       </div>
     );
