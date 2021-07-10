@@ -45,16 +45,18 @@ class MovieDetails extends Component {
     }
 
     return (
-      <div data-testid="movie-details">
+      <div className="movie-details" data-testid="movie-details">
         <img alt="Movie Cover" src={ `../${imagePath}` } />
         <p>{ `Title: ${title}` }</p>
         <p>{ `Subtitle: ${subtitle}` }</p>
         <p>{ `Storyline: ${storyline}` }</p>
         <p>{ `Genre: ${genre}` }</p>
         <p>{ `Rating: ${rating}` }</p>
-        <Link to="/">VOLTAR</Link>
-        <Link to={ `${id}/edit` }>EDITAR</Link>
-        <Link to="/" onClick={ () => movieAPI.deleteMovie(id) }>DELETAR</Link>
+        <div className="movie-det-btns">
+          <Link className="movie-det-btn" to="/">Voltar</Link>
+          <Link className="movie-det-btn" to={ `${id}/edit` }>Editar</Link>
+          <Link className="movie-det-btn" to="/" onClick={ () => movieAPI.deleteMovie(id) }>Deletar</Link>
+        </div>
       </div>
     );
   }
